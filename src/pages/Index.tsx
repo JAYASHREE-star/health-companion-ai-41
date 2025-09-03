@@ -4,6 +4,7 @@ import HealthMetricCard from "@/components/HealthMetricCard";
 import RiskAssessmentCard from "@/components/RiskAssessmentCard";
 import AIInsightsPanel from "@/components/AIInsightsPanel";
 import { Heart, Activity, Shield, Brain, Users, TrendingUp } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/healthcare-hero.jpg";
 import healthMonitoringImage from "@/assets/health-monitoring.jpg";
 
@@ -21,11 +22,13 @@ const Index = () => {
               <h1 className="text-xl font-bold text-foreground">HealthAI</h1>
             </div>
             <nav className="hidden md:flex items-center gap-6">
-              <a href="#dashboard" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Dashboard</a>
-              <a href="#monitoring" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Monitoring</a>
-              <a href="#insights" className="text-sm text-muted-foreground hover:text-foreground transition-colors">AI Insights</a>
+              <Link to="/dashboard" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Dashboard</Link>
+              <Link to="/monitoring" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Monitoring</Link>
+              <Link to="/insights" className="text-sm text-muted-foreground hover:text-foreground transition-colors">AI Insights</Link>
             </nav>
-            <Button variant="medical" size="sm">Get Started</Button>
+            <Link to="/dashboard">
+              <Button variant="medical" size="sm">Get Started</Button>
+            </Link>
           </div>
         </div>
       </header>
@@ -46,12 +49,16 @@ const Index = () => {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="secondary" size="lg" className="bg-white text-medical-blue hover:bg-white/90">
-                  Start Health Assessment
-                </Button>
-                <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
-                  Learn More
-                </Button>
+                <Link to="/dashboard">
+                  <Button variant="secondary" size="lg" className="bg-white text-medical-blue hover:bg-white/90 w-full sm:w-auto">
+                    Start Health Assessment
+                  </Button>
+                </Link>
+                <Link to="/monitoring">
+                  <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 w-full sm:w-auto">
+                    Learn More
+                  </Button>
+                </Link>
               </div>
               <div className="flex items-center gap-8 text-white/80">
                 <div className="flex items-center gap-2">
@@ -81,7 +88,7 @@ const Index = () => {
       </section>
 
       {/* Health Dashboard Section */}
-      <section id="dashboard" className="py-20">
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="space-y-12">
             <div className="text-center space-y-4">
@@ -153,7 +160,7 @@ const Index = () => {
       </section>
 
       {/* Health Monitoring Section */}
-      <section id="monitoring" className="py-20 bg-secondary/30">
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -179,9 +186,11 @@ const Index = () => {
                   <span className="text-foreground">Early risk detection</span>
                 </div>
               </div>
-              <Button variant="medical" size="lg">
-                Start Monitoring
-              </Button>
+              <Link to="/monitoring">
+                <Button variant="medical" size="lg">
+                  Start Monitoring
+                </Button>
+              </Link>
             </div>
             <div className="relative">
               <img 
