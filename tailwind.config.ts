@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'medical-blue': 'hsl(var(--medical-blue))',
+				'medical-blue-light': 'hsl(var(--medical-blue-light))',
+				'medical-teal': 'hsl(var(--medical-teal))',
+				'medical-teal-light': 'hsl(var(--medical-teal-light))',
+				'health-positive': 'hsl(var(--health-positive))',
+				'health-warning': 'hsl(var(--health-warning))',
+				'health-critical': 'hsl(var(--health-critical))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +74,16 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-hero': 'var(--gradient-hero)',
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'medium': 'var(--shadow-medium)',
+				'strong': 'var(--shadow-strong)',
 			},
 			keyframes: {
 				'accordion-down': {

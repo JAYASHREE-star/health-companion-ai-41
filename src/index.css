@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -17,24 +17,43 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 195 100% 39%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 195 43% 94%;
+    --secondary-foreground: 195 100% 20%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 210 40% 95%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 168 76% 36%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 195 100% 39%;
+
+    /* Healthcare Design System */
+    --medical-blue: 195 100% 39%;
+    --medical-blue-light: 195 43% 94%;
+    --medical-teal: 168 76% 36%;
+    --medical-teal-light: 168 76% 95%;
+    --health-positive: 142 76% 36%;
+    --health-warning: 45 93% 47%;
+    --health-critical: 0 84% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(195, 100%, 39%), hsl(168, 76%, 36%));
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(195, 43%, 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(195, 100%, 39%), hsl(195, 100%, 49%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 12px -2px hsl(195, 100%, 39%, 0.08);
+    --shadow-medium: 0 8px 25px -5px hsl(195, 100%, 39%, 0.12);
+    --shadow-strong: 0 25px 50px -12px hsl(195, 100%, 39%, 0.25);
 
     --radius: 0.5rem;
 
